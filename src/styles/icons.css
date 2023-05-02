@@ -1,0 +1,9 @@
+.fa-brand {
+    background-color: var(--color-accent-blue);
+    border-radius: 100rem;
+
+    margin-right: .5rem;
+
+    height: 1.5rem;
+    width: 1.5rem;
+}
