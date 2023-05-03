@@ -11,10 +11,14 @@
 }
 
 :root {
-  --color-primary-blue: #1d2131;
-  --color-secondary-blue: #292d3e;
+  --color-primary-gray: rgb(23, 23, 23);
+  --color-secondary-gray: rgb(33, 33, 33);
+
+  --color-primary-blue: #181a1f;
+  --color-secondary-blue: #21252b;
   --color-tertiary-blue: #808282;
   --color-accent-blue: #4A86E8;
+
   --color-white: #F9F9F9;
 
   --color-stop-light-red: #FF4D4D;
@@ -113,22 +117,28 @@ main {
   background-color: var(--color-secondary-blue);
 
   position: absolute;
-  top: 9.5vh;
+  top: 11vh;
   left: 16%;
 
   padding: 1rem;
 
-  height: 88.5vh;
+  height: 87vh;
   width: 84%;
 }
 
 #main-nav {
   border-bottom: 1px solid var(--color-secondary-blue);
 
-  height: 3.5vh;
+  height: 5vh;
   width: 100%;
 
   overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+#main-nav::-webkit-scrollbar {
+  height: 0px;
+  width: 0px;
 }
 
 #main-nav a {
@@ -212,7 +222,7 @@ main {
 }
 
 .side-nav-link {
-  font-size: .9rem;
+  font-size: .8rem;
   padding: .1rem 1.5rem;
 }
 

@@ -1,9 +1,8 @@
 .dark-theme,
 .dark-theme body {
-    background-color: var(--bg-color-dark);
-    color: var(--text-color-dark);
-  }
+  background-color: var(--color-primary-gray);
+}
 
-  .dark-theme main {
-    background-color: var(--dark-grey-color);
-  }
+.dark-theme main {
+  background-color: var(--color-secondary-gray);
+}

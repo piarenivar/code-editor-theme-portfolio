@@ -7,11 +7,11 @@ import Content from '@/components/global/Content';
 import Header from '@/components/global/Header';
 
 export default function App({ Component, pageProps }) {
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState('blue');
 
   useEffect(() => {
     const htmlTag = document.getElementsByTagName('html')[0];
-    if (theme === 'light') {
+    if (theme === 'blue') {
       htmlTag.classList.remove('dark-theme');
     } else {
       htmlTag.classList.add('dark-theme');
@@ -19,13 +19,13 @@ export default function App({ Component, pageProps }) {
   }, [theme]);
 
   const toggleTheme = () => {
-    setTheme(theme === 'light' ? 'dark' : 'light');
+    setTheme(theme === 'blue' ? 'dark' : 'blue');
   }
 
   return (
     <>
       <Header />
-      <Content />
+      <Content toggle={toggleTheme} />
       <Component {...pageProps} theme={theme} />
     </>
   )

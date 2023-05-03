@@ -13,8 +13,8 @@ export default function SideIcons({ toggle }) {
       <div className='side-icons-sub-menu'>
         <Link href='/contact' className='center'><i className='fa-solid fa-paper-plane fa-lg' /></Link>
         <Link href='/about' className='center'><i className='fa-solid fa-circle-user fa-lg' /></Link>
-        <Link href='/' className='center'><i className='fa-solid fa-gear fa-lg' /></Link>
+        <Link href='' className='center' onClick={toggle}><i className='fa-solid fa-gear fa-lg' /></Link>
       </div>
     </nav>
   )
-}
+} 

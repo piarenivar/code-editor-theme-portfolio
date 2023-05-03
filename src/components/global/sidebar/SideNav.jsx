@@ -33,12 +33,14 @@ export default function SideNav() {
         <Link href='/stack' className='center-y side-nav-link'><Image src={react} alt='React icon' />stack.jsx</Link>
         <Link href='/contact' className='center-y side-nav-link'><Image src={ts} alt='TypeScript icon' /> contact.ts</Link>
         <Link href='/blog' className='center-y side-nav-link'><Image src={json} alt='JSON icon' />blog.json</Link>
+        <Link href='/resume' className='center-y side-nav-link'><Image src={json} alt='JSON icon' />resume.json</Link>
       </div>
       <button className='center-y' onClick={handleRotateSocials}><i className={rotateSocials ? 'fa-solid fa-chevron-down fa-xs rotate-90' : 'fa-solid fa-chevron-down fa-xs'} />Socials</button>
       <div className={rotateSocials ? 'hide-height' : 'side-nav-links'}>
-        <Link href='https://github.com/piarenivar' className='center-y side-nav-link' target='_blank'><i className='center fa-brands fa-github' />github.com</Link>
-        <Link href='https://www.linkedin.com/in/pabloarenivar/' className='center-y side-nav-link' target='_blank'><i className='center fa-brands fa-linkedin' />linkedin.com</Link>
-        <Link href='https://codepen.io/piarenivar' className='center-y side-nav-link' target='_blank'><i className='center fa-brands fa-codepen' />codepen.com</Link>
+        <Link href='/contact' className='center-y side-nav-link'><i className='center fa-solid fa-envelope' />email</Link>
+        <Link href='https://github.com/piarenivar' className='center-y side-nav-link' target='_blank'><i className='center fa-brands fa-github' />github</Link>
+        <Link href='https://www.linkedin.com/in/pabloarenivar/' className='center-y side-nav-link' target='_blank'><i className='center fa-brands fa-linkedin' />linkedin</Link>
+        <Link href='https://codepen.io/piarenivar' className='center-y side-nav-link' target='_blank'><i className='center fa-brands fa-codepen' />codepen</Link>
       </div>
     </nav>
   )

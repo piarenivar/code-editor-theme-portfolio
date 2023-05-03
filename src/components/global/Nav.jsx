@@ -17,6 +17,7 @@ export default function Nav() {
       <Link href='/stack' className='center-y side-nav-link'><Image src={react} alt='React icon' />stack.jsx</Link>
       <Link href='/contact' className='center-y side-nav-link'><Image src={ts} alt='TypeScript icon' /> contact.ts</Link>
       <Link href='/blog' className='center-y side-nav-link'><Image src={json} alt='JSON icon' />blog.json</Link>
+      <Link href='/resume' className='center-y side-nav-link'><Image src={json} alt='JSON icon' />resume.json</Link>
     </nav>
   )
 }

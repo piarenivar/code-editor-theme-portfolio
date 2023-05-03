@@ -1,0 +1,69 @@
+.header {
+    font-size: 2.75rem;
+    font-weight: 600;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main a {
+    font-size: 1.2rem;
+    font-weight: 600;
+
+    margin-right: 1rem;
+    padding: .5rem .75rem;
+}
+
+.main code {
+    margin-bottom: 1rem;
+}
+
+.tag {
+    animation:
+        typing 10s steps(100),
+        blink-caret .8s ease-in-out infinite;
+
+    border-right: 2px solid orangered;
+
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+
+    overflow: hidden;
+
+    padding-right: .25rem;
+    max-width: fit-content;
+
+    white-space: nowrap;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: orangered;
+    }
+}
+
+.text {
+    font-size: 1.1rem;
+}
+
+.work {
+    background-color: orangered;
+}
