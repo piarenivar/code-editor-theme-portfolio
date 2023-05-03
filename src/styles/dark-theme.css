@@ -6,3 +6,19 @@
 .dark-theme main {
   background-color: var(--color-secondary-gray);
 }
+
+.dark-theme #content,
+.dark-theme #header,
+.dark-theme #main-nav {
+  border-bottom: 1px solid var(--color-secondary-gray);
+}
+
+.dark-theme #sidebar,
+.dark-theme #side-icons {
+  border-right: 1px solid var(--color-secondary-gray);
+}
+
+.dark-theme #side-icons a:hover,
+.dark-theme .side-nav-link:hover {
+  background-color: var(--color-secondary-gray);
+}

@@ -7,7 +7,7 @@ export default function Home() {
       <code className={styles.header}>Pablo Arenivar</code>
       <code className={styles.tag}>Full Stack Web Developer</code>
       <code className={styles.text}>I specialize in building modern and responsive websites and full stack web applications using React, Bootstrap/Tailwind, NextJS and Firebase among a variety of other technologies.</code>
-      <div>
+      <div className={styles.links}>
         <Link href='/work' className={styles.work}><code>See Work</code></Link>
         <Link href='/contact'><code>Contact Me</code></Link>
       </div>

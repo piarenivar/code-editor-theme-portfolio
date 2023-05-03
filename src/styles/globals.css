@@ -14,10 +14,10 @@
   --color-primary-gray: rgb(23, 23, 23);
   --color-secondary-gray: rgb(33, 33, 33);
 
-  --color-primary-blue: #181a1f;
-  --color-secondary-blue: #21252b;
+  --color-primary-blue: rgb(12, 14, 18);
+  --color-secondary-blue: rgb(18, 21, 25);
   --color-tertiary-blue: #808282;
-  --color-accent-blue: #4A86E8;
+  --color-accent-blue: #ff4500;
 
   --color-white: #F9F9F9;
 
@@ -117,19 +117,19 @@ main {
   background-color: var(--color-secondary-blue);
 
   position: absolute;
-  top: 11vh;
+  top: 10vh;
   left: 16%;
 
   padding: 1rem;
 
-  height: 87vh;
+  height: 88vh;
   width: 84%;
 }
 
 #main-nav {
   border-bottom: 1px solid var(--color-secondary-blue);
 
-  height: 5vh;
+  height: 4vh;
   width: 100%;
 
   overflow-x: scroll;

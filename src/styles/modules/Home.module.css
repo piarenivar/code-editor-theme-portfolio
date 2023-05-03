@@ -3,10 +3,21 @@
     font-weight: 600;
 }
 
+.links {
+    margin: 1rem 0;
+}
+
 .main {
+    background-image: url('https://raw.githubusercontent.com/piarenivar/image-repo/main/portfolio/hero-graphic.png');
+    background-position: right bottom;
+    background-size: 40rem;
+    background-repeat: no-repeat;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    /* padding-top: 4rem; */
 }
 
 .main a {
@@ -18,7 +29,7 @@
 }
 
 .main code {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .tag {
@@ -26,7 +37,7 @@
         typing 10s steps(100),
         blink-caret .8s ease-in-out infinite;
 
-    border-right: 2px solid orangered;
+    border-right: 2px solid #ff4500;
 
     font-size: 1.5rem;
     letter-spacing: 1px;
@@ -50,20 +61,27 @@
 }
 
 @keyframes blink-caret {
+
     from,
     to {
         border-color: transparent
     }
 
     50% {
-        border-color: orangered;
+        border-color: #ff4500;
     }
 }
 
 .text {
     font-size: 1.1rem;
+    max-width: 50vw;
 }
 
 .work {
-    background-color: orangered;
+    background-color: rgb(255, 69, 0);
+    transition: var(--transition);
+}
+
+.work:hover {
+    background-color: rgb(255, 69, 0, .72);
 }
