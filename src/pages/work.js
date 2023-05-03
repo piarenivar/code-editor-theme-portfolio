@@ -1,8 +1,7 @@
 export default function WorkPage() {
   return (
     <main>
-      <h1>Work Page Title</h1>
-      <p>Work Page Content</p>
+      <code>Work & Projects</code>
     </main>
   )
 }

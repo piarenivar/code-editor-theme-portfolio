@@ -1,7 +1,7 @@
 export default function StackPage() {
     return (
         <main>
-            <code>This is the StackPage</code>
+            <code>Technology Stack</code>
         </main>
     )
 }

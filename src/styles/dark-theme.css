@@ -22,3 +22,8 @@
 .dark-theme .side-nav-link:hover {
   background-color: var(--color-secondary-gray);
 }
+
+.dark-theme .side-active-link,
+.dark-theme .main-active-link {
+  background-color: var(--color-secondary-gray);
+}

@@ -1,9 +1,16 @@
 .fa-brand {
-    background-color: var(--color-accent-blue);
+    background-color: var(--color-accent-orange);
     border-radius: 100rem;
 
     margin-right: .5rem;
 
     height: 1.5rem;
     width: 1.5rem;
+}
+
+@media (max-width: 576px) {
+    .fa-brand {
+        height: 1.25rem;
+        width: 1.25rem;
+    }
 }

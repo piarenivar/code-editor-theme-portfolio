@@ -1,19 +1,47 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 export default function SideIcons({ toggle }) {
+  const router = useRouter();
+
+  const linksTop = [
+    { path: '/', icon: 'fa-solid fa-house fa-lg' },
+    { path: '/work', icon: 'fa-solid fa-code fa-lg' },
+    { path: '/stack', icon: 'fa-solid fa-layer-group fa-lg' },
+  ];
+
+  const linksMid = [
+    { path: '/blog', icon: 'fa-solid fa-pen-nib fa-lg' }
+  ]
+
+  const linksBottom = [
+    { path: '/resume', icon: 'fa-solid fa-file fa-lg' },
+    { path: '/contact', icon: 'fa-solid fa-paper-plane fa-lg' },
+    { path: '/about', icon: 'fa-solid fa-circle-user fa-lg' },
+    { path: '', icon: 'fa-solid fa-gear fa-lg', toggle: toggle,}
+  ]
+
   return (
     <nav id='side-icons'>
       <div className='side-icons-sub-menu'>
-        <Link href='/' className='center'><i className='fa-solid fa-house fa-lg' /></Link>
-        <Link href='/work' className='center'><i className='fa-solid fa-code fa-lg' /></Link>
-        <Link href='/stack' className='center'><i className='fa-solid fa-layer-group fa-lg' /></Link>
+        {linksTop.map(({ path, icon }) => (
+          <Link key={path} href={path} className={`center ${router.pathname === path ? 'side-active-icon-link' : ''}`}>
+            <i className={`${icon} ${router.pathname === path ? 'side-active-icon' : ''}`}></i>
+          </Link>
+        ))}
         <hr />
-        <Link href='/blog' className='center'><i className='fa-solid fa-pen-nib fa-lg' /></Link>
+        {linksMid.map(({ path, icon }) => (
+          <Link key={path} href={path} className={`center ${router.pathname === path ? 'side-active-icon-link' : ''}`}>
+            <i className={`${icon} ${router.pathname === path ? 'side-active-icon' : ''}`}></i>
+          </Link>
+        ))}
       </div>
       <div className='side-icons-sub-menu'>
-        <Link href='/contact' className='center'><i className='fa-solid fa-paper-plane fa-lg' /></Link>
-        <Link href='/about' className='center'><i className='fa-solid fa-circle-user fa-lg' /></Link>
-        <Link href='' className='center' onClick={toggle}><i className='fa-solid fa-gear fa-lg' /></Link>
+        {linksBottom.map(({ path, icon, toggle }) => (
+          <Link key={path} href={path} className={`center ${router.pathname === path ? 'side-active-icon-link' : ''}`} onClick={toggle}>
+            <i className={`${icon} ${router.pathname === path ? 'side-active-icon' : ''}`}></i>
+          </Link>
+        ))}
       </div>
     </nav>
   )
