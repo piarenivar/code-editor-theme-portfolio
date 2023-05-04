@@ -13,7 +13,7 @@ export default function Document() {
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
-        <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Source+Code+Pro:wght@400;500;600&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Source+Code+Pro:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
         <script src="https://kit.fontawesome.com/3596f02005.js" crossorigin="anonymous" />
       </Head>
