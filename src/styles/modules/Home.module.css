@@ -13,21 +13,13 @@
 .main {
     background-image: url('https://raw.githubusercontent.com/piarenivar/image-repo/main/portfolio/hero-graphic.png');
     background-position: right bottom;
-    background-size: 40rem;
+    background-size: 32rem;
     background-repeat: no-repeat;
 
     display: flex;
     flex-direction: column;
 
     padding-top: 8vh;
-}
-
-.main a {
-    font-size: 1.2rem;
-    font-weight: 600;
-
-    margin-right: 1rem;
-    padding: .5rem .75rem;
 }
 
 .tag {
@@ -74,64 +66,6 @@
 .text {
     font-size: 1.1rem;
     max-width: 50vw;
-}
-
-.links a {
-    background: none;
-    border: none;
-
-    display: flex;
-    align-items: center;
-
-    transition: var(--transition);
-
-    margin-right: 1.5rem;
-    position: relative;
-
-    height: 3rem;
-    width: fit-content;
-}
-
-.links a::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: 100rem;
-    background: orange;
-    width: 3rem;
-    height: 3rem;
-    transition: all 0.3s ease;
-}
-
-.links code {
-    position: relative;
-}
-
-.links a svg {
-    position: relative;
-    top: 0;
-    margin-left: .75rem;
-    fill: none;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke: var(--color-white);
-    stroke-width: 2;
-    transform: translateX(-5px);
-    transition: var(--transition);
-}
-
-.links a:hover:before {
-    width: 100%;
-    background: #ff4500;
-}
-
-.links a:hover svg {
-    transform: translateX(0);
-}
-
-.links a:active {
-    transform: scale(0.95);
 }
 
 @media (max-width: 990px) {

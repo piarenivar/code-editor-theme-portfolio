@@ -10,9 +10,11 @@ export default function Document() {
         <title>Pablo Arenivar | Full Stack Web Developer</title>
         <meta name="title" content="Pablo Arenivar | Full Stack Web Developer" />
         <meta name="description" content="Hi, I'm Pablo, a full stack web developer specializing in building modern and responsive front-end websites and full stack web applications. My area of expertise focuses on working with React, Bootstrap/Tailwind, NextJS and Firebase among a variety of other technologies." />
+
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Source+Code+Pro:wght@400;500;600&display=swap" rel="stylesheet" />
+
         <script src="https://kit.fontawesome.com/3596f02005.js" crossorigin="anonymous" />
       </Head>
       <body>

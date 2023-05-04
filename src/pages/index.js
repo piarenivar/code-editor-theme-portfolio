@@ -1,29 +1,21 @@
 import styles from '../styles/modules/Home.module.css';
-import Link from 'next/link';
+import CustomLink from '@/components/global/CustomLink';
+
+const linkText = [
+  { link: 'work', text: 'See Work' },
+  { link: 'contact', text: 'Get In Touch' },
+]
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <code className={styles.header}>Pablo Arenivar</code>
-      <code className={styles.tag}>Full Stack Web Developer</code>
-      <code className={styles.text}>I specialize in building modern and responsive websites and full stack web applications using React, Bootstrap/Tailwind, NextJS and Firebase among a variety of other technologies.</code>
+      <h1 className={styles.header}>Pablo Arenivar</h1>
+      <h2 className={styles.tag}>Full Stack Web Developer</h2>
+      <p className={styles.text}>I specialize in building modern and responsive websites and full stack web applications using React, Bootstrap/Tailwind, NextJS Firebase and Vercel, among a variety of other technologies.</p>
       <div className={styles.links}>
-        {/* <Link href='/work' className={styles.work}><code>See Work</code></Link> */}
-        <Link href='/work'>
-          <code>See Work</code>
-          <svg viewBox="0 0 13 10" height="10px" width="15px">
-            <path d="M1,5 L11,5"></path>
-            <polyline points="8 1 12 5 8 9"></polyline>
-          </svg>
-        </Link>
-
-        <Link href='/contact'>
-          <code>Contact Me</code>
-          <svg viewBox="0 0 13 10" height="10px" width="15px">
-            <path d="M1,5 L11,5"></path>
-            <polyline points="8 1 12 5 8 9"></polyline>
-          </svg>
-        </Link>
+        {linkText.map(({ link, text }) => (
+          <CustomLink link={link} text={text} />
+        ))}
       </div>
     </main>
   )

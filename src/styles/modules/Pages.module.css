@@ -1,0 +1,54 @@
+.container {
+    display: flex;
+}
+
+.container_left {
+    display: flex;
+    flex-direction: column;
+
+    width: 72%;
+    min-width: 72%;
+}
+
+.container_left a {
+    margin-top: 1rem;
+}
+
+.container_right {
+    width: 100%;
+}
+
+.css_text {
+    margin-left: 2rem;
+}
+
+.css_title {
+    color: goldenrod;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.main P {
+    margin-bottom: 1rem;
+}
+
+.title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+
+@media (max-width: 990px) {
+    .container_left {
+        min-width: 100%;
+    }
+}
+
+@media (max-height: 600px) {
+    .container_left {
+        min-width: 100%;
+    }
+}

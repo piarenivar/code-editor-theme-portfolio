@@ -25,13 +25,26 @@
   --color-stop-light-yellow: #FBC45F;
   --color-stop-light-green: #19E47E;
 
-  --font-family: 'Poppins', sans-serif;
+  --code-font: 'Source Code Pro', monospace;
+  --body-font: 'Poppins', sans-serif;
   --transition: all .2s ease-in-out;
   --transition-bg-color: background-color .2s ease-in-out;
 }
 
-.rotate-90 {
-  transform: rotate(-90deg);
+::selection {
+  background-color: rgb(255, 69, 0, .4);
+}
+
+.blue {
+  color: #89d7fc;
+}
+
+.gold {
+  color: goldenrod;
+}
+
+.purple {
+  color: violet;
 }
 
 a {
@@ -44,7 +57,7 @@ html {
   background-color: var(--color-primary-blue);
   color: var(--color-white);
 
-  font-family: var(--font-family);
+  font-family: var(--code-font);
 }
 
 .center {
@@ -72,6 +85,68 @@ html {
 
   height: 92vh;
   width: 100vw;
+}
+
+.custom-link {
+  background: none;
+  border: none;
+
+  display: flex;
+  align-items: center;
+
+  font-size: 1.2rem;
+  font-weight: 600;
+
+  margin-right: 1.5rem;
+  padding: .5rem .75rem;
+  position: relative;
+
+  height: 3rem;
+  width: fit-content;
+
+  transition: var(--transition);
+}
+
+.custom-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 100rem;
+  background: orange;
+  width: 3rem;
+  height: 3rem;
+  transition: all 0.3s ease;
+}
+
+.custom-link code {
+  position: relative;
+}
+
+.custom-link svg {
+  position: relative;
+  top: 0;
+  margin-left: .75rem;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: var(--color-white);
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: var(--transition);
+}
+
+.custom-link:hover:before {
+  width: 100%;
+  background: #ff4500;
+}
+
+.custom-link:hover svg {
+  transform: translateX(0);
+}
+
+.custom-link:active {
+  transform: scale(0.95);
 }
 
 .explorer {
@@ -120,9 +195,11 @@ main {
   top: 10vh;
   left: 16%;
 
+  overflow: scroll;
   padding: 1rem;
 
   height: 88vh;
+  max-height: 88vh;
   width: 84%;
 }
 
@@ -136,7 +213,8 @@ main {
   overflow-y: hidden;
 }
 
-#main-nav::-webkit-scrollbar {
+#main-nav::-webkit-scrollbar,
+main::-webkit-scrollbar {
   height: 0px;
   width: 0px;
 }
@@ -148,6 +226,10 @@ main {
 .main-active-link {
   background-color: var(--color-secondary-blue);
   border-top: 1px solid var(--color-accent-orange);
+}
+
+.rotate-90 {
+  transform: rotate(-90deg);
 }
 
 #sidebar {
@@ -266,6 +348,21 @@ main {
 
 .stop-light-yellow {
   background-color: var(--color-stop-light-yellow);
+}
+
+.underline_link {
+  background-image: linear-gradient(var(--color-accent-orange), var(--color-accent-orange));
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: 0% .1rem;
+  color: #ff4500;
+
+  padding-bottom: .3rem;
+  transition: var(--transition);
+}
+
+.underline_link:hover {
+  background-size: 100% .1rem;
 }
 
 @media (max-width: 1350px) {
