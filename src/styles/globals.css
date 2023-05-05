@@ -192,6 +192,19 @@ html {
   transition: max-height .2s ease-in-out;
 }
 
+input,
+textarea {
+  background-color: rgb(128, 128, 128, .4);
+  border: none;
+  outline: none;
+}
+
+input:focus,
+textarea:focus {
+  outline: .1rem solid var(--color-accent-orange);
+}
+
+
 main {
   background-color: var(--color-secondary-blue);
 

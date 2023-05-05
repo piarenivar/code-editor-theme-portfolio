@@ -3,6 +3,7 @@ import css from '../../public/stack/css.png';
 import js from '../../public/stack/js.png';
 import bootstrap from '../../public/stack/bootstrap.png';
 import react from '../../public/stack/react.png';
+import vite from '../../public/stack/vite.png';
 import express from '../../public/stack/express.png';
 import node from '../../public/stack/node.png';
 import next from '../../public/stack/next.png';
@@ -41,45 +42,51 @@ const stackData = [
         img: react,
         alt: 'React icon',
         stack: 'React'
-    },
+    }, 
     {
         id: 6,
+        img: vite,
+        alt: 'Vite icon',
+        stack: 'Vite'
+    },
+    {
+        id: 7,
         img: express,
         alt: 'Express icon',
         stack: 'Express'
     },
     {
-        id: 7,
+        id: 8,
         img: node,
         alt: 'Node icon',
         stack: 'Node'
     },
     {
-        id: 8,
+        id: 9,
         img: next,
         alt: 'Next icon',
         stack: 'Next'
     },
     {
-        id: 9,
+        id: 10,
         img: firebase,
         alt: 'Firebase icon',
         stack: 'Firebase'
     },
     {
-        id: 10,
+        id: 11,
         img: nginx,
         alt: 'NGINX icon',
         stack: 'NGINX'
     },
     {
-        id: 11,
+        id: 12,
         img: git,
         alt: 'Git icon',
         stack: 'Git'
     },
     {
-        id: 12,
+        id: 13,
         img: github,
         alt: 'Github icon',
         stack: 'Github'
