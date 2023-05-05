@@ -3,8 +3,8 @@ import Card from '@/components/Card';
 
 import workData from '../lib/workData';
 
-function renderWorkData({ id, img, alt, title, desc, stack, github, url }) {
-  return <Card key={id} img={img} alt={alt} title={title} desc={desc} stack={stack} github={github} url={url} />
+function renderWorkData({ id, img, alt, title, type, desc, stack, github, url }) {
+  return <Card key={id} img={img} alt={alt} title={title} type={type} desc={desc} stack={stack} github={github} url={url} />
 }
 
 export default function WorkPage() {
