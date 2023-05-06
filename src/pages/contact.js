@@ -12,7 +12,8 @@ const initState = { isLoading: false, values: initValues };
 
 export default function ContactPage() {
   const [state, setState] = useState(initState);
-  const { isLoading, values } = state;
+  const { error, isLoading, values } = state;
+  const [success, setSuccess] = useState(false);
 
   const handleChange = ({ target }) => setState((prev) => ({
     ...prev,
@@ -22,13 +23,25 @@ export default function ContactPage() {
     }
   }))
 
-  const onSubmit = async () => {
+  const onSubmit = async (e) => {
+    e.preventDefault();
+
     setState((prev) => ({
       ...prev,
-      isLoading: true
+      isLoading: true,
     }));
 
-    await sendContactForm(values)
+    try {
+      await sendContactForm(values);
+      setState(initState);
+      setSuccess(true);
+    } catch (error) {
+      setState((prev) => ({
+        ...prev,
+        isLoading: false,
+        error: error.message,
+      }));
+    }
   }
 
   return (
@@ -45,8 +58,14 @@ export default function ContactPage() {
           <input type='text' name='name' value={values.name} onChange={handleChange} placeholder='Name' className={styles.contact_name} required />
           <input type='email' name='email' value={values.email} onChange={handleChange} placeholder='Email' className={styles.contact_email} required />
           <input type='text' name='subject' value={values.subject} onChange={handleChange} placeholder='Subject' className={styles.contact_subject} required />
-          <textarea type='text' name='message' value={state.message} onChange={handleChange} placeholder='Message' className={styles.contact_textarea} required />
+          <textarea name='message' value={values.message} onChange={handleChange} placeholder='Message' className={styles.contact_textarea} required />
           <button type='submit' disabled={!values.name || !values.email || !values.subject || !values.message} onClick={onSubmit} isLoading={isLoading} className={`center ${styles.contact_submit}`}>{isLoading ? <Loader /> : 'Submit'}</button>
+          {error && (
+            <span className='center'>{error}</span>
+          )}
+          {success && (
+            <span className='center success'>Message successfully sent!</span>
+          )}
         </form>
       </div>
     </main>

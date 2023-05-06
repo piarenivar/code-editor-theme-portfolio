@@ -281,4 +281,13 @@
     .card {
         min-width: 64vw;
     }
+
+    .contact_name,
+    .contact_email {
+        width: 100%;
+    }
+
+    .contact_submit {
+        margin-bottom: 1rem;
+    }
 }
