@@ -31,8 +31,8 @@ export default function SideNav() {
     { path: '/work', label: 'work.js', img: js },
     { path: '/stack', label: 'stack.jsx', img: react },
     { path: '/contact', label: 'contact.ts', img: ts },
-    { path: '/blog', label: 'blog.json', img: json },
-    { path: '/resume', label: 'resume.json', img: json }
+    // { path: '/blog', label: 'blog.json', img: json },
+    // { path: '/resume', label: 'resume.json', img: json }
   ];
 
   return (

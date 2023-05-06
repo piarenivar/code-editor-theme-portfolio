@@ -11,11 +11,11 @@ export default function SideIcons({ toggle }) {
   ];
 
   const linksMid = [
-    { path: '/blog', icon: 'fa-solid fa-pen-nib fa-lg' }
+    // { path: '/blog', icon: 'fa-solid fa-pen-nib fa-lg' }
   ]
 
   const linksBottom = [
-    { path: '/resume', icon: 'fa-solid fa-file fa-lg' },
+    // { path: '/resume', icon: 'fa-solid fa-file fa-lg' },
     { path: '/contact', icon: 'fa-solid fa-paper-plane fa-lg' },
     { path: '/about', icon: 'fa-solid fa-circle-user fa-lg' },
     { path: '', icon: 'fa-solid fa-gear fa-lg', toggle: toggle,}
