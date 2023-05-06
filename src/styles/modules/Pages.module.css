@@ -141,6 +141,7 @@
 .container_left_contact {
     display: flex;
     flex-direction: column;
+    width: 12rem;
     min-width: fit-content;
 }
 
@@ -164,7 +165,7 @@
 
     padding: 0 1rem;
     width: 100%;
-    max-width: 800px;
+    max-width: 640px;
 }
 
 .contact_name,
@@ -183,7 +184,7 @@
 }
 
 .contact_textarea {
-    height: 8rem;
+    min-height: 12rem;
 }
 
 .contact_submit {
@@ -200,12 +201,19 @@
 
     padding: .25rem .75rem;
     transition: var(--transition);
+
+    min-width: 8rem;
 }
 
 .contact_submit:hover,
 .contact_submit:focus {
     background-size: 100% 100%;
     outline: none;
+}
+
+.contact_submit[disabled] {
+    color: rgb(128, 128, 128, .8);
+    background-size: 0% 100%;
 }
 
 .css_text {
