@@ -1,11 +1,23 @@
 import notera from '../../public/notera.png';
 import portfolio from '../../public/portfolio.png';
 import textToImage from '../../public/text-to-image.png';
+import theOpenColumn from '../../public/the-open-column.png';
 import ve from '../../public/ve.png';
 
 const workData = [
     {
         id: 1,
+        img: theOpenColumn,
+        alt: 'The Open Column.',
+        title: 'The Open Column',
+        type: 'Project (in progress)',
+        desc: 'A full stack web application with CRUD functionalities.',
+        stack: ['React', 'Tailwind', 'Next', 'Firebase', 'Vercel'],
+        github: '/',
+        url: '/',
+    },
+    {
+        id: 2,
         img: portfolio,
         alt: 'Code editor themed web developer portfolio cover image.',
         title: 'Code Editor Themed Portfolio',
@@ -16,7 +28,7 @@ const workData = [
         url: '/',
     },
     {
-        id: 2,
+        id: 3,
         img: textToImage,
         alt: 'Text to image generator cover image.',
         title: 'Text to Image Generator',
@@ -27,7 +39,7 @@ const workData = [
         url: 'https://text-to-image.herokuapp.com/',
     },
     {
-        id: 3,
+        id: 4,
         img: ve,
         alt: 'Valencia Estructuristas cover image.',
         title: 'Valencia Estructuristas',
@@ -38,7 +50,7 @@ const workData = [
         url: 'https://valenciaestructuristas.com/',
     },
     {
-        id: 4,
+        id: 5,
         img: notera,
         alt: 'Notera project cover image.',
         title: 'Notera',
